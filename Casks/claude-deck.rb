@@ -1,9 +1,9 @@
 cask "claude-deck" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.1.9"
-  sha256 arm:   "4f3e0f21e2e506e7971de6cbc66696b9f9350180e72049f019e53cb29db4a8ea",
-         intel: "d2e23cb5ef49bed395ca8557283e35cde2209016b198d7a979d8beb5b3b37453"
+  version "0.1.11"
+  sha256 arm:   "a24c907dd14dbd60a25f426ae65fe7e16259ba8cf72a89168eae3f07080579b0",
+         intel: "9d33ec8dcf67c206dab284b1937e98838f7b89d46e2030924e249e0d92a2c394"
 
   url "https://github.com/ThomasTartrau/claude-deck/releases/download/app-v#{version}/Claude.Deck_#{version}_#{arch}.dmg"
   name "Claude Deck"
