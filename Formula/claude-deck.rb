@@ -1,26 +1,26 @@
 class ClaudeDeck < Formula
   desc "TUI dashboard to manage multiple Claude Code sessions via tmux"
   homepage "https://github.com/ThomasTartrau/claude-deck"
-  version "0.4.14"
+  version "0.4.15"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/ThomasTartrau/claude-deck/releases/download/cli-v#{version}/claude-deck-aarch64-apple-darwin.tar.gz"
-      sha256 "08979e2784c40f44e8207008011f9dc1b868e73759b159a3382c12edbf3fe1b2"
+      sha256 "498aff380d9400cc933f9de963c390dbba6688ef2db6d0138c21a921fb497892"
     else
       url "https://github.com/ThomasTartrau/claude-deck/releases/download/cli-v#{version}/claude-deck-x86_64-apple-darwin.tar.gz"
-      sha256 "c7723f1da856f5f6603d0cc79b13afbcde656ae582ff247f236423d8e8841873"
+      sha256 "08ab0d075fc14463efe743885cd7363b743681467a6b950afd970717f5193f15"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/ThomasTartrau/claude-deck/releases/download/cli-v#{version}/claude-deck-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f8962c233adec456613c97d9d62d6f96f0fa00064f030d00ada4353a03935d43"
+      sha256 "4c15c1faa109ab1e1fe02d4b27ea83b1511ec030e137a89a54a660a4f20edc32"
     else
       url "https://github.com/ThomasTartrau/claude-deck/releases/download/cli-v#{version}/claude-deck-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "66a7c215778824d7beb07a1eccf0a51b5305441c98966408f6adee125570401a"
+      sha256 "f803424b40c59bc15902ba3092f5032f324ce216cb6e44e96b4fc859d18352ac"
     end
   end
 
